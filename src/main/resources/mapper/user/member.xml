@@ -3,12 +3,12 @@
 <!-- resources/mapper/user/UserMapper.xml -->
 <mapper namespace="com.blog.mapper.Member">
 
-    <insert id="insertUser" parameterType="UserDto">
+    <insert id="insertUser" parameterType="MemberDTO">
         INSERT INTO users (username, password, email)
         VALUES (#{username}, #{password}, #{email})
     </insert>
 
-    <select id="selectUserByUsername" resultType="UserDto">
+    <select id="selectUserByUsername" resultType="MemberDTO">
         SELECT * FROM users WHERE username = #{username}
     </select>
 
