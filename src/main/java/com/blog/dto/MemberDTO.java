@@ -1,5 +1,8 @@
 package com.blog.dto;
 
+import lombok.Data;
+
+@Data
 public class MemberDTO {
 
 	private int id;
