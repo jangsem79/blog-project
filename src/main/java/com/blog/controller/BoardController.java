@@ -2,13 +2,13 @@ package com.blog.controller;
 
 import org.springframework.stereotype.Controller;
 
-import com.blog.service.MemberService;
+import com.blog.service.BoardService;
 
 import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
-public class MemberController {
+public class BoardController {
 
-	private final MemberService memberService;
+	private final BoardService boardService;
 }
