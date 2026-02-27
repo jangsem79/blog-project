@@ -1,8 +1,10 @@
 package com.blog.mapper;
 
+import com.blog.dto.MemberDTO;
+
 public interface Member {
 
-	int insertUser(UserDto user);
-    UserDto selectUserByUsername(String username);
-    UserDto selectUserByEmail(String email);
+	int insertUser(MemberDTO user);
+    MemberDTO selectUserByUsername(String username);
+    MemberDTO selectUserByEmail(String email);
 }
